@@ -81,11 +81,35 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "lib/types.html#Systems.ContinuousLinearSystem",
+    "location": "lib/types.html#Systems.LinearContinuousSystem",
     "page": "Types",
-    "title": "Systems.ContinuousLinearSystem",
+    "title": "Systems.LinearContinuousSystem",
     "category": "Type",
-    "text": "ContinuousLinearSystem\n\nContinuous-time linear system of the form\n\nx = A x\n\nFields\n\nA – square matrix\n\n\n\n"
+    "text": "LinearContinuousSystem\n\nContinuous-time linear system of the form\n\nx = A x\n\nFields\n\nA – square matrix\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.LinearControlContinuousSystem",
+    "page": "Types",
+    "title": "Systems.LinearControlContinuousSystem",
+    "category": "Type",
+    "text": "LinearControlContinuousSystem\n\nContinuous-time linear control system of the form\n\nx = A x + B u\n\nFields\n\nA – square matrix\nB – matrix\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedLinearContinuousSystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedLinearContinuousSystem",
+    "category": "Type",
+    "text": "ConstrainedLinearContinuousSystem\n\nContinuous-time linear system with state constraints of the form\n\nx = A xx(t)  mathcalX\n\nFields\n\nA – square matrix\nX – state constraints\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedLinearControlContinuousSystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedLinearControlContinuousSystem",
+    "category": "Type",
+    "text": "ConstrainedLinearControlContinuousSystem\n\nContinuous-time linear control system with state constraints of the form\n\nx = A x + B ux(t)  mathcalXu(t)  mathcalU text for all  t\n\nFields\n\nA – square matrix\nB – matrix\nX – state constraints\nU – input constraints\n\n\n\n"
 },
 
 {
@@ -93,15 +117,39 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Continuous Systems",
     "category": "section",
-    "text": "ContinuousLinearSystem"
+    "text": "LinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem"
 },
 
 {
-    "location": "lib/types.html#Systems.DiscreteLinearSystem",
+    "location": "lib/types.html#Systems.LinearDiscreteSystem",
     "page": "Types",
-    "title": "Systems.DiscreteLinearSystem",
+    "title": "Systems.LinearDiscreteSystem",
     "category": "Type",
-    "text": "DiscreteLinearSystem\n\nDiscrete-time linear system of the form\n\nx_k+1 = A x_k\n\nFields\n\nA – square matrix\n\n\n\n"
+    "text": "LinearDiscreteSystem\n\nDiscrete-time linear system of the form\n\nx_k+1 = A x_k\n\nFields\n\nA – square matrix\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.LinearControlDiscreteSystem",
+    "page": "Types",
+    "title": "Systems.LinearControlDiscreteSystem",
+    "category": "Type",
+    "text": "LinearControlDiscreteSystem\n\nDiscrete-time linear control system of the form\n\nx_k+1 = A x_k + B u_k\n\nFields\n\nA – square matrix\nB – matrix\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedLinearDiscreteSystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedLinearDiscreteSystem",
+    "category": "Type",
+    "text": "ConstrainedLinearDiscreteSystem\n\nDiscrete-time linear system with state constraints of the form\n\nx_k+1 = A x_kx_k  mathcalX\n\nFields\n\nA – square matrix\nX – state constraints\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedLinearControlDiscreteSystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedLinearControlDiscreteSystem",
+    "category": "Type",
+    "text": "ConstrainedLinearControlDiscreteSystem\n\nDiscrete-time linear control system with state constraints of the form\n\nx_k+1 = A x_k + B u_kx_k  mathcalXu_k  mathcalU text for all  k\n\nFields\n\nA – square matrix\nB – matrix\nX – state constraints\nU – input constraints\n\n\n\n"
 },
 
 {
@@ -109,7 +157,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Discrete Systems",
     "category": "section",
-    "text": "DiscreteLinearSystem"
+    "text": "LinearDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedLinearControlDiscreteSystem"
 },
 
 {
