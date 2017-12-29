@@ -113,11 +113,27 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#Systems.LinearAlgebraicContinuousSystem",
+    "page": "Types",
+    "title": "Systems.LinearAlgebraicContinuousSystem",
+    "category": "Type",
+    "text": "LinearAlgebraicContinuousSystem\n\nContinuous-time linear algebraic system of the form\n\nE x = A x\n\nFields\n\nA – matrix\nE – matrix, same size as A\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedLinearAlgebraicContinuousSystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedLinearAlgebraicContinuousSystem",
+    "category": "Type",
+    "text": "ConstrainedLinearAlgebraicContinuousSystem\n\nContinuous-time linear system with state constraints of the form\n\nE x = A xx(t)  mathcalX\n\nFields\n\nA – matrix\nE – matrix, same size as A\nX – state constraints\n\n\n\n"
+},
+
+{
     "location": "lib/types.html#Continuous-Systems-1",
     "page": "Types",
     "title": "Continuous Systems",
     "category": "section",
-    "text": "LinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem"
+    "text": "LinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem"
 },
 
 {
@@ -153,11 +169,27 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#Systems.LinearAlgebraicDiscreteSystem",
+    "page": "Types",
+    "title": "Systems.LinearAlgebraicDiscreteSystem",
+    "category": "Type",
+    "text": "LinearAlgebraicDiscreteSystem\n\nDiscrete-time linear algebraic system of the form\n\nE x_k+1 = A x_k\n\nFields\n\nA – matrix\nE – matrix, same size as A\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedLinearAlgebraicDiscreteSystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedLinearAlgebraicDiscreteSystem",
+    "category": "Type",
+    "text": "ConstrainedLinearAlgebraicDiscreteSystem\n\nDiscrete-time linear system with state constraints of the form\n\nE x_k+1 = A x_kx_k  mathcalX\n\nFields\n\nA – matrix\nE – matrix, same size as A\nX – state constraints\n\n\n\n"
+},
+
+{
     "location": "lib/types.html#Discrete-Systems-1",
     "page": "Types",
     "title": "Discrete Systems",
     "category": "section",
-    "text": "LinearDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedLinearControlDiscreteSystem"
+    "text": "LinearDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedLinearControlDiscreteSystem\nLinearAlgebraicDiscreteSystem\nConstrainedLinearAlgebraicDiscreteSystem"
 },
 
 {
