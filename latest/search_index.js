@@ -193,6 +193,30 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#Systems.InitialValueProblem",
+    "page": "Types",
+    "title": "Systems.InitialValueProblem",
+    "category": "Type",
+    "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system's type.\n\nExamples\n\njulia> p = InitialValueProblem(LinearContinuousSystem(eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\njulia> statedim(p)\n  2\njulia> inputdim(p)\n  0\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.IVP",
+    "page": "Types",
+    "title": "Systems.IVP",
+    "category": "Type",
+    "text": "IVP\n\nIVP is an alias for InitialValueProblem.\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Initial-Value-Problems-1",
+    "page": "Types",
+    "title": "Initial Value Problems",
+    "category": "section",
+    "text": "InitialValueProblem\nIVP"
+},
+
+{
     "location": "lib/methods.html#",
     "page": "Methods",
     "title": "Methods",
