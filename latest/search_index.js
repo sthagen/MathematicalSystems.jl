@@ -197,7 +197,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Systems.InitialValueProblem",
     "category": "Type",
-    "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system's type.\n\nExamples\n\njulia> p = InitialValueProblem(LinearContinuousSystem(eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\njulia> statedim(p)\n  2\njulia> inputdim(p)\n  0\n\n\n\n"
+    "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system's type.\n\nFields\n\ns  – system\nx0 – initial state\n\nExamples\n\nThe linear system x = -x with initial condition x_0 = -12 12:\n\njulia> p = InitialValueProblem(LinearContinuousSystem(-eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\njulia> statedim(p)\n  2\njulia> inputdim(p)\n  0\n\n\n\n"
 },
 
 {
