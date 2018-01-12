@@ -81,6 +81,22 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#Systems.ContinuousIdentitySystem",
+    "page": "Types",
+    "title": "Systems.ContinuousIdentitySystem",
+    "category": "Type",
+    "text": "ContinuousIdentitySystem <: AbstractContinuousSystem\n\nTrivial identity continuous-time system of the form\n\nx = 0\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedContinuousIdentitySystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedContinuousIdentitySystem",
+    "category": "Type",
+    "text": "ConstrainedContinuousIdentitySystem <: AbstractContinuousSystem\n\nTrivial identity continuous-time system with state constraints of the form\n\nx = 0x(t)  mathcalX\n\n\n\n"
+},
+
+{
     "location": "lib/types.html#Systems.LinearContinuousSystem",
     "page": "Types",
     "title": "Systems.LinearContinuousSystem",
@@ -133,7 +149,23 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Continuous Systems",
     "category": "section",
-    "text": "LinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem"
+    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem"
+},
+
+{
+    "location": "lib/types.html#Systems.DiscreteIdentitySystem",
+    "page": "Types",
+    "title": "Systems.DiscreteIdentitySystem",
+    "category": "Type",
+    "text": "DiscreteIdentitySystem <: AbstractDiscreteSystem\n\nTrivial identity discrete-time system of the form\n\nx_k+1 = x_k\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstrainedDiscreteIdentitySystem",
+    "page": "Types",
+    "title": "Systems.ConstrainedDiscreteIdentitySystem",
+    "category": "Type",
+    "text": "ConstrainedDiscreteIdentitySystem <: AbstractDiscreteSystem\n\nTrivial identity discrete-time system with state constraints of the form\n\nx_k+1 = x_kx_k  mathcalX\n\n\n\n"
 },
 
 {
@@ -189,7 +221,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Discrete Systems",
     "category": "section",
-    "text": "LinearDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedLinearControlDiscreteSystem\nLinearAlgebraicDiscreteSystem\nConstrainedLinearAlgebraicDiscreteSystem"
+    "text": "DiscreteIdentitySystem\nConstrainedDiscreteIdentitySystem\nLinearDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedLinearControlDiscreteSystem\nLinearAlgebraicDiscreteSystem\nConstrainedLinearAlgebraicDiscreteSystem"
 },
 
 {
