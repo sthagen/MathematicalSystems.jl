@@ -229,7 +229,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Systems.InitialValueProblem",
     "category": "Type",
-    "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system's type.\n\nFields\n\ns  – system\nx0 – initial state\n\nExamples\n\nThe linear system x = -x with initial condition x_0 = -12 12:\n\njulia> p = InitialValueProblem(LinearContinuousSystem(-eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\njulia> statedim(p)\n  2\njulia> inputdim(p)\n  0\n\n\n\n"
+    "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system\'s type.\n\nFields\n\ns  – system\nx0 – initial state\n\nExamples\n\nThe linear system x = -x with initial condition x_0 = -12 12:\n\njulia> p = InitialValueProblem(LinearContinuousSystem(-eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\njulia> statedim(p)\n  2\njulia> inputdim(p)\n  0\n\n\n\n"
 },
 
 {
@@ -265,6 +265,14 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/methods.html#Systems.stateset",
+    "page": "Methods",
+    "title": "Systems.stateset",
+    "category": "Function",
+    "text": "stateset(s::AbstractSystem)\n\nReturns the set of allowed states of system s.\n\n\n\n"
+},
+
+{
     "location": "lib/methods.html#Systems.inputdim",
     "page": "Methods",
     "title": "Systems.inputdim",
@@ -273,11 +281,19 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/methods.html#Systems.inputset",
+    "page": "Methods",
+    "title": "Systems.inputset",
+    "category": "Function",
+    "text": "inputset(s::AbstractSystem)\n\nReturns the set of allowed inputs of system s.\n\n\n\n"
+},
+
+{
     "location": "lib/methods.html#Methods-1",
     "page": "Methods",
     "title": "Methods",
     "category": "section",
-    "text": "This section describes systems methods implemented in Systems.jl. Pages = [\"methods.md\"]\nDepth = 3CurrentModule = Systems\nDocTestSetup = quote\n    using Systems\nendstatedim\ninputdim"
+    "text": "This section describes systems methods implemented in Systems.jl. Pages = [\"methods.md\"]\nDepth = 3CurrentModule = Systems\nDocTestSetup = quote\n    using Systems\nendstatedim\nstateset\ninputdim\ninputset"
 },
 
 {
