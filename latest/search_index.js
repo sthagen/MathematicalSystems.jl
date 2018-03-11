@@ -21,7 +21,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Features",
     "category": "section",
-    "text": "Types for mathematical systems modeling."
+    "text": "Generic and flexible systems definitions, while being fast and type stable.\nTypes for mathematical systems modeling: continuous, discrete, controlled,linear algebraic, etc.Iterator interfaces to handle constant or time-varying inputs."
 },
 
 {
@@ -45,14 +45,14 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Types",
     "category": "section",
-    "text": "This section describes systems types implemented in Systems.jl. Pages = [\"types.md\"]\nDepth = 3CurrentModule = Systems\nDocTestSetup = quote\n    using Systems\nend"
+    "text": "This section describes systems types implemented in Systems.jl.Pages = [\"types.md\"]\nDepth = 3CurrentModule = Systems\nDocTestSetup = quote\n    using Systems\nend"
 },
 
 {
     "location": "lib/types.html#Systems.AbstractSystem",
     "page": "Types",
     "title": "Systems.AbstractSystem",
-    "category": "Type",
+    "category": "type",
     "text": "AbstractSystem\n\nAbstract supertype for all system types.\n\n\n\n"
 },
 
@@ -60,7 +60,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.AbstractContinuousSystem",
     "page": "Types",
     "title": "Systems.AbstractContinuousSystem",
-    "category": "Type",
+    "category": "type",
     "text": "AbstractContinuousSystem\n\nAbstract supertype for all continuous system types.\n\n\n\n"
 },
 
@@ -68,7 +68,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.AbstractDiscreteSystem",
     "page": "Types",
     "title": "Systems.AbstractDiscreteSystem",
-    "category": "Type",
+    "category": "type",
     "text": "AbstractDiscreteSystem\n\nAbstract supertype for all discrete system types.\n\n\n\n"
 },
 
@@ -84,7 +84,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ContinuousIdentitySystem",
     "page": "Types",
     "title": "Systems.ContinuousIdentitySystem",
-    "category": "Type",
+    "category": "type",
     "text": "ContinuousIdentitySystem <: AbstractContinuousSystem\n\nTrivial identity continuous-time system of the form\n\nx = 0\n\n\n\n"
 },
 
@@ -92,7 +92,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedContinuousIdentitySystem",
     "page": "Types",
     "title": "Systems.ConstrainedContinuousIdentitySystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedContinuousIdentitySystem <: AbstractContinuousSystem\n\nTrivial identity continuous-time system with state constraints of the form\n\nx = 0x(t)  mathcalX\n\n\n\n"
 },
 
@@ -100,7 +100,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.LinearContinuousSystem",
     "page": "Types",
     "title": "Systems.LinearContinuousSystem",
-    "category": "Type",
+    "category": "type",
     "text": "LinearContinuousSystem\n\nContinuous-time linear system of the form\n\nx = A x\n\nFields\n\nA – square matrix\n\n\n\n"
 },
 
@@ -108,7 +108,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.LinearControlContinuousSystem",
     "page": "Types",
     "title": "Systems.LinearControlContinuousSystem",
-    "category": "Type",
+    "category": "type",
     "text": "LinearControlContinuousSystem\n\nContinuous-time linear control system of the form\n\nx = A x + B u\n\nFields\n\nA – square matrix\nB – matrix\n\n\n\n"
 },
 
@@ -116,7 +116,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedLinearContinuousSystem",
     "page": "Types",
     "title": "Systems.ConstrainedLinearContinuousSystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedLinearContinuousSystem\n\nContinuous-time linear system with state constraints of the form\n\nx = A xx(t)  mathcalX\n\nFields\n\nA – square matrix\nX – state constraints\n\n\n\n"
 },
 
@@ -124,7 +124,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedLinearControlContinuousSystem",
     "page": "Types",
     "title": "Systems.ConstrainedLinearControlContinuousSystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedLinearControlContinuousSystem\n\nContinuous-time linear control system with state constraints of the form\n\nx = A x + B ux(t)  mathcalXu(t)  mathcalU text for all  t\n\nFields\n\nA – square matrix\nB – matrix\nX – state constraints\nU – input constraints\n\n\n\n"
 },
 
@@ -132,7 +132,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.LinearAlgebraicContinuousSystem",
     "page": "Types",
     "title": "Systems.LinearAlgebraicContinuousSystem",
-    "category": "Type",
+    "category": "type",
     "text": "LinearAlgebraicContinuousSystem\n\nContinuous-time linear algebraic system of the form\n\nE x = A x\n\nFields\n\nA – matrix\nE – matrix, same size as A\n\n\n\n"
 },
 
@@ -140,7 +140,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedLinearAlgebraicContinuousSystem",
     "page": "Types",
     "title": "Systems.ConstrainedLinearAlgebraicContinuousSystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedLinearAlgebraicContinuousSystem\n\nContinuous-time linear system with state constraints of the form\n\nE x = A xx(t)  mathcalX\n\nFields\n\nA – matrix\nE – matrix, same size as A\nX – state constraints\n\n\n\n"
 },
 
@@ -156,7 +156,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.DiscreteIdentitySystem",
     "page": "Types",
     "title": "Systems.DiscreteIdentitySystem",
-    "category": "Type",
+    "category": "type",
     "text": "DiscreteIdentitySystem <: AbstractDiscreteSystem\n\nTrivial identity discrete-time system of the form\n\nx_k+1 = x_k\n\n\n\n"
 },
 
@@ -164,7 +164,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedDiscreteIdentitySystem",
     "page": "Types",
     "title": "Systems.ConstrainedDiscreteIdentitySystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedDiscreteIdentitySystem <: AbstractDiscreteSystem\n\nTrivial identity discrete-time system with state constraints of the form\n\nx_k+1 = x_kx_k  mathcalX\n\n\n\n"
 },
 
@@ -172,7 +172,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.LinearDiscreteSystem",
     "page": "Types",
     "title": "Systems.LinearDiscreteSystem",
-    "category": "Type",
+    "category": "type",
     "text": "LinearDiscreteSystem\n\nDiscrete-time linear system of the form\n\nx_k+1 = A x_k\n\nFields\n\nA – square matrix\n\n\n\n"
 },
 
@@ -180,7 +180,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.LinearControlDiscreteSystem",
     "page": "Types",
     "title": "Systems.LinearControlDiscreteSystem",
-    "category": "Type",
+    "category": "type",
     "text": "LinearControlDiscreteSystem\n\nDiscrete-time linear control system of the form\n\nx_k+1 = A x_k + B u_k\n\nFields\n\nA – square matrix\nB – matrix\n\n\n\n"
 },
 
@@ -188,7 +188,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedLinearDiscreteSystem",
     "page": "Types",
     "title": "Systems.ConstrainedLinearDiscreteSystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedLinearDiscreteSystem\n\nDiscrete-time linear system with state constraints of the form\n\nx_k+1 = A x_kx_k  mathcalX\n\nFields\n\nA – square matrix\nX – state constraints\n\n\n\n"
 },
 
@@ -196,7 +196,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedLinearControlDiscreteSystem",
     "page": "Types",
     "title": "Systems.ConstrainedLinearControlDiscreteSystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedLinearControlDiscreteSystem\n\nDiscrete-time linear control system with state constraints of the form\n\nx_k+1 = A x_k + B u_kx_k  mathcalXu_k  mathcalU text for all  k\n\nFields\n\nA – square matrix\nB – matrix\nX – state constraints\nU – input constraints\n\n\n\n"
 },
 
@@ -204,7 +204,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.LinearAlgebraicDiscreteSystem",
     "page": "Types",
     "title": "Systems.LinearAlgebraicDiscreteSystem",
-    "category": "Type",
+    "category": "type",
     "text": "LinearAlgebraicDiscreteSystem\n\nDiscrete-time linear algebraic system of the form\n\nE x_k+1 = A x_k\n\nFields\n\nA – matrix\nE – matrix, same size as A\n\n\n\n"
 },
 
@@ -212,7 +212,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.ConstrainedLinearAlgebraicDiscreteSystem",
     "page": "Types",
     "title": "Systems.ConstrainedLinearAlgebraicDiscreteSystem",
-    "category": "Type",
+    "category": "type",
     "text": "ConstrainedLinearAlgebraicDiscreteSystem\n\nDiscrete-time linear system with state constraints of the form\n\nE x_k+1 = A x_kx_k  mathcalX\n\nFields\n\nA – matrix\nE – matrix, same size as A\nX – state constraints\n\n\n\n"
 },
 
@@ -228,7 +228,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.InitialValueProblem",
     "page": "Types",
     "title": "Systems.InitialValueProblem",
-    "category": "Type",
+    "category": "type",
     "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system\'s type.\n\nFields\n\ns  – system\nx0 – initial state\n\nExamples\n\nThe linear system x = -x with initial condition x_0 = -12 12:\n\njulia> p = InitialValueProblem(LinearContinuousSystem(-eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\njulia> statedim(p)\n  2\njulia> inputdim(p)\n  0\n\n\n\n"
 },
 
@@ -236,7 +236,7 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/types.html#Systems.IVP",
     "page": "Types",
     "title": "Systems.IVP",
-    "category": "Type",
+    "category": "type",
     "text": "IVP\n\nIVP is an alias for InitialValueProblem.\n\n\n\n"
 },
 
@@ -249,6 +249,38 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#Systems.AbstractInput",
+    "page": "Types",
+    "title": "Systems.AbstractInput",
+    "category": "type",
+    "text": "AbstractInput\n\nAbstract supertype for all input types.\n\nNotes\n\nThe input types defined here implement an iterator interface, such that other methods can build upon the behavior of inputs which are either constant or varying.\n\nIteration is supported with an index number called iterator state. The iteration function Base.next takes and returns a tuple (input, state), where input represents the value of the input, and state is an index which counts the number of times this iterator was called.\n\nA convenience function nextinput(input, n) is also provided and it returns the first n elements of input.\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.ConstantInput",
+    "page": "Types",
+    "title": "Systems.ConstantInput",
+    "category": "type",
+    "text": "ConstantInput{UT} <: AbstractInput\n\nType representing an input that remains constant in time.\n\nFields\n\nU – input set\n\nExamples\n\nThe constant input holds a single element and its length is infinite. To access the field U, you can use Base\'s next given a state, or the method  nextinput given the number of desired input elements:\n\njulia> c = ConstantInput(-1//2)\nSystems.ConstantInput{Rational{Int64}}(-1//2)\n\njulia> next(c, 1)\n(-1//2, nothing)\n\njulia> next(c, 2)\n(-1//2, nothing)\n\njulia> collect(nextinput(c, 4))\n4-element Array{Rational{Int64},1}:\n -1//2\n -1//2\n -1//2\n -1//2\n\nThe elements of this input are rational numbers:\n\njulia> eltype(c)\nRational{Int64}\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems.VaryingInput",
+    "page": "Types",
+    "title": "Systems.VaryingInput",
+    "category": "type",
+    "text": "VaryingInput{UT} <: AbstractInput\n\nType representing an input that may vary with time.\n\nFields\n\nU – vector of input sets\n\nExamples\n\nThe varying input holds a vector and its length equals the number of elements in the vector. Consider an input given by a vector of rational numbers:\n\njulia> v = VaryingInput([-1//2, 1//2])\nSystems.VaryingInput{Rational{Int64}}(Rational{Int64}[-1//2, 1//2])\n\njulia> length(v)\n2\n\njulia> eltype(v)\nRational{Int64}\n\nBase\'s next method receives the input and an integer state and returns the input element and the next iteration state:\n\njulia> next(v, 1)\n(-1//2, 2)\n\njulia> next(v, 2)\n(1//2, 3)\n\nThe method nextinput receives a varying input and an integer n and returns an iterator over the first n elements of this input (where n=1 by default):\n\njulia> typeof(nextinput(v))\nBase.Iterators.Take{Systems.VaryingInput{Rational{Int64}}}\n\njulia> collect(nextinput(v, 1))\n1-element Array{Rational{Int64},1}:\n -1//2\n\njulia> collect(nextinput(v, 2))\n2-element Array{Rational{Int64},1}:\n -1//2\n  1//2\n\nYou can collect the inputs in an array, or equivalently use list comprehension, (or use a for loop):\n\njulia> collect(v)\n2-element Array{Rational{Int64},1}:\n -1//2\n  1//2\n\njulia> [2*vi for vi in v]\n2-element Array{Rational{Int64},1}:\n -1//1\n  1//1\n\nSince this input type is finite, querying more elements than its length returns the full vector:\n\njulia> collect(nextinput(v, 4))\n2-element Array{Rational{Int64},1}:\n -1//2\n  1//2\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Input-Types-1",
+    "page": "Types",
+    "title": "Input Types",
+    "category": "section",
+    "text": "AbstractInput\nConstantInput\nVaryingInput"
+},
+
+{
     "location": "lib/methods.html#",
     "page": "Methods",
     "title": "Methods",
@@ -257,10 +289,18 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/methods.html#Methods-1",
+    "page": "Methods",
+    "title": "Methods",
+    "category": "section",
+    "text": "This section describes systems methods implemented in Systems.jl.Pages = [\"methods.md\"]\nDepth = 3CurrentModule = Systems\nDocTestSetup = quote\n    using Systems\nend"
+},
+
+{
     "location": "lib/methods.html#Systems.statedim",
     "page": "Methods",
     "title": "Systems.statedim",
-    "category": "Function",
+    "category": "function",
     "text": "statedim(s::AbstractSystem)\n\nReturns the dimension of the state space of system s.\n\n\n\n"
 },
 
@@ -268,15 +308,23 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/methods.html#Systems.stateset",
     "page": "Methods",
     "title": "Systems.stateset",
-    "category": "Function",
+    "category": "function",
     "text": "stateset(s::AbstractSystem)\n\nReturns the set of allowed states of system s.\n\n\n\n"
+},
+
+{
+    "location": "lib/methods.html#States-1",
+    "page": "Methods",
+    "title": "States",
+    "category": "section",
+    "text": "statedim\nstateset"
 },
 
 {
     "location": "lib/methods.html#Systems.inputdim",
     "page": "Methods",
     "title": "Systems.inputdim",
-    "category": "Function",
+    "category": "function",
     "text": "inputdim(s::AbstractSystem)\n\nReturns the dimension of the input space of system s.\n\n\n\n"
 },
 
@@ -284,16 +332,24 @@ var documenterSearchIndex = {"docs": [
     "location": "lib/methods.html#Systems.inputset",
     "page": "Methods",
     "title": "Systems.inputset",
-    "category": "Function",
+    "category": "function",
     "text": "inputset(s::AbstractSystem)\n\nReturns the set of allowed inputs of system s.\n\n\n\n"
 },
 
 {
-    "location": "lib/methods.html#Methods-1",
+    "location": "lib/methods.html#Systems.nextinput",
     "page": "Methods",
-    "title": "Methods",
+    "title": "Systems.nextinput",
+    "category": "function",
+    "text": "nextinput(input::ConstantInput, n::Int=1)\n\nReturns the first n elements of this input.\n\nInput\n\ninput – a constant input\nn     – (optional, default: 1) the number of desired elements\n\nOutput\n\nA repeated iterator that generates n equal samples of this input.\n\n\n\nnextinput(input::VaryingInput, n::Int=1)\n\nReturns the first n elements of this input.\n\nInput\n\ninput – varying input\nn     – (optional, default: 1) number of desired elements\n\nOutput\n\nAn iterator of type Base.Iterators.Take that represents at most the first n elements of this input.\n\n\n\n"
+},
+
+{
+    "location": "lib/methods.html#Inputs-1",
+    "page": "Methods",
+    "title": "Inputs",
     "category": "section",
-    "text": "This section describes systems methods implemented in Systems.jl. Pages = [\"methods.md\"]\nDepth = 3CurrentModule = Systems\nDocTestSetup = quote\n    using Systems\nendstatedim\nstateset\ninputdim\ninputset"
+    "text": "inputdim\ninputset\nnextinput"
 },
 
 {
