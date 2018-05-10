@@ -405,7 +405,7 @@ var documenterSearchIndex = {"docs": [
     "page": "About",
     "title": "Related projects",
     "category": "section",
-    "text": "This package originated from Hybrid Systems and systems definitions for reachability problems within JuliaReach.Below we list more related projects.Package name Description\nHybridSystems.jl Hybrid Systems definitions in Julia.\nLTISystems.jl Julia package for representing linear time-invariant system models and operations defined on them.\nControlToolbox.jl Analysis and design tools for control systems.\nronisbr/ControlToolbox.jl A Control Toolbox for Julia language.\nDynamicalSystemsBase.jl Definitions of core system and data types used in the ecosystem of DynamicalSystems.jl.\nControlSystems.jl A Control Systems Toolbox for Julia"
+    "text": "This package originated from Hybrid Systems and systems definitions for reachability problems within JuliaReach.Below we list more related projects.Package name Description\nHybridSystems.jl Hybrid Systems definitions in Julia.\nLTISystems.jl Julia package for representing linear time-invariant system models and operations defined on them.\nControlToolbox.jl Analysis and design tools for control systems.\nronisbr/ControlToolbox.jl A Control Toolbox for Julia language.\nDynamicalSystemsBase.jl Definitions of core system and data types used in the ecosystem of DynamicalSystems.jl.\nControlSystems.jl A Control Systems Toolbox for Julia\nModelingToolkit.jl A toolkit for modeling and creating DSLs for Scientific Computing in Julia"
 },
 
 {
