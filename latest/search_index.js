@@ -145,27 +145,11 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "lib/types.html#MathematicalSystems.PolynomialContinuousSystem",
-    "page": "Types",
-    "title": "MathematicalSystems.PolynomialContinuousSystem",
-    "category": "type",
-    "text": "PolynomialContinuousSystem\n\nContinuous-time polynomial system of the form\n\nx = p(x)\n\nFields\n\np        – polynomial\nstatedim – number of state variables\n\n\n\n"
-},
-
-{
-    "location": "lib/types.html#MathematicalSystems.ConstrainedPolynomialContinuousSystem",
-    "page": "Types",
-    "title": "MathematicalSystems.ConstrainedPolynomialContinuousSystem",
-    "category": "type",
-    "text": "ConstrainedPolynomialContinuousSystem\n\nContinuous-time polynomial system with state constraints,\n\nx = p(x) x(t)  mathcalX\n\nFields\n\np        – polynomial\nX        – constraint set\nstatedim – number of state variables\n\n\n\n"
-},
-
-{
     "location": "lib/types.html#Continuous-Systems-1",
     "page": "Types",
     "title": "Continuous Systems",
     "category": "section",
-    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem\nPolynomialContinuousSystem\nConstrainedPolynomialContinuousSystem"
+    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem"
 },
 
 {
@@ -233,27 +217,11 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
-    "location": "lib/types.html#MathematicalSystems.PolynomialDiscreteSystem",
-    "page": "Types",
-    "title": "MathematicalSystems.PolynomialDiscreteSystem",
-    "category": "type",
-    "text": "PolynomialDiscreteSystem\n\nDiscrete-time polynomial system of the form\n\nx_k+1 = p(x_k)x_k  mathcalX\n\nFields\n\np        – polynomial\nstatedim – number of state variables\n\n\n\n"
-},
-
-{
-    "location": "lib/types.html#MathematicalSystems.ConstrainedPolynomialDiscreteSystem",
-    "page": "Types",
-    "title": "MathematicalSystems.ConstrainedPolynomialDiscreteSystem",
-    "category": "type",
-    "text": "ConstrainedPolynomialDiscreteSystem\n\nDiscrete-time polynomial system with state constraints,\n\nx_k+1 = p(x_k)x_k  mathcalX\n\nFields\n\np        – polynomial\nX        – constraint set\nstatedim – number of state variables\n\n\n\n"
-},
-
-{
     "location": "lib/types.html#Discrete-Systems-1",
     "page": "Types",
     "title": "Discrete Systems",
     "category": "section",
-    "text": "DiscreteIdentitySystem\nConstrainedDiscreteIdentitySystem\nLinearDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedLinearControlDiscreteSystem\nLinearAlgebraicDiscreteSystem\nConstrainedLinearAlgebraicDiscreteSystem\nPolynomialDiscreteSystem\nConstrainedPolynomialDiscreteSystem"
+    "text": "DiscreteIdentitySystem\nConstrainedDiscreteIdentitySystem\nLinearDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedLinearControlDiscreteSystem\nLinearAlgebraicDiscreteSystem\nConstrainedLinearAlgebraicDiscreteSystem"
 },
 
 {
@@ -261,7 +229,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "MathematicalSystems.InitialValueProblem",
     "category": "type",
-    "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system\'s type.\n\nFields\n\ns  – system\nx0 – initial state\n\nExamples\n\nThe linear system x = -x with initial condition x_0 = -12 12:\n\njulia> p = InitialValueProblem(LinearContinuousSystem(-eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\n\njulia> statedim(p)\n2\n\njulia> inputdim(p)\n0\n\n\n\n"
+    "text": "InitialValueProblem\n\nParametric composite type for initial value problems. It is parameterized in the system\'s type.\n\nFields\n\ns  – system\nx0 – initial state\n\nExamples\n\nThe linear system x = -x with initial condition x_0 = -12 12:\n\njulia> p = InitialValueProblem(LinearContinuousSystem(-eye(2)), [-1/2., 1/2]);\n\njulia> p.x0\n2-element Array{Float64,1}:\n -0.5\n  0.5\njulia> statedim(p)\n  2\njulia> inputdim(p)\n  0\n\n\n\n"
 },
 
 {
