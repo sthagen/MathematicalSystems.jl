@@ -12,6 +12,8 @@
  * License: MIT
  */
 
+/* The original CSS is modified such that it right-justifies the text. */
+
 /* fonts */
 body, input {
   font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
@@ -77,6 +79,10 @@ h6 { font-size: 1em; }
 h4, h5, h6 {
     margin-top: 1.5em;
     margin-bottom: 1em;
+}
+
+p {
+  text-align: justify
 }
 
 img {
@@ -271,7 +277,7 @@ nav.toc ul.internal {
 }
 
 nav.toc ul.internal li.toplevel {
-    border-top: 1px solid #909090;
+    border-top: 1px solid #c9c9c9;
     font-weight: bold;
 }
 
@@ -458,6 +464,10 @@ article section.docstring a.source-link {
 /* Search page */
 #search-results .category {
     font-size: smaller;
+}
+
+#search-results .category:before {
+    content: " ";
 }
 
 /* Overriding the <code> block style of highligh.js.
