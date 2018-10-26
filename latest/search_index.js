@@ -105,6 +105,14 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#MathematicalSystems.AffineContinuousSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.AffineContinuousSystem",
+    "category": "type",
+    "text": "AffineContinuousSystem\n\nContinuous-time affine system of the form\n\nx = A x + b\n\nFields\n\nA – square matrix\nb – vector\n\n\n\n\n\n"
+},
+
+{
     "location": "lib/types.html#MathematicalSystems.LinearControlContinuousSystem",
     "page": "Types",
     "title": "MathematicalSystems.LinearControlContinuousSystem",
@@ -165,7 +173,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Continuous Systems",
     "category": "section",
-    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem\nPolynomialContinuousSystem\nConstrainedPolynomialContinuousSystem"
+    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nAffineContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem\nPolynomialContinuousSystem\nConstrainedPolynomialContinuousSystem"
 },
 
 {
