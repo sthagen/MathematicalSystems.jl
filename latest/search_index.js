@@ -137,6 +137,14 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#MathematicalSystems.ConstrainedAffineControlContinuousSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.ConstrainedAffineControlContinuousSystem",
+    "category": "type",
+    "text": "ConstrainedAffineControlContinuousSystem\n\nContinuous-time affine control system with state constraints of the form\n\nx = A x + B u + c x(t)  mathcalX u(t)  mathcalU text for all  t\n\nand c a vector.\n\nFields\n\nA – square matrix\nB – matrix\nc – vector\nX – state constraints\nU – input constraints\n\n\n\n\n\n"
+},
+
+{
     "location": "lib/types.html#MathematicalSystems.ConstrainedLinearControlContinuousSystem",
     "page": "Types",
     "title": "MathematicalSystems.ConstrainedLinearControlContinuousSystem",
@@ -181,7 +189,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "Continuous Systems",
     "category": "section",
-    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nAffineContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedAffineContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem\nPolynomialContinuousSystem\nConstrainedPolynomialContinuousSystem"
+    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nAffineContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedAffineContinuousSystem\nConstrainedAffineControlContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem\nPolynomialContinuousSystem\nConstrainedPolynomialContinuousSystem"
 },
 
 {
