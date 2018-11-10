@@ -337,6 +337,102 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#MathematicalSystems.AbstractMap",
+    "page": "Types",
+    "title": "MathematicalSystems.AbstractMap",
+    "category": "type",
+    "text": "AbstractMap\n\nAbstract supertype for all map types.\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.LinearMap",
+    "page": "Types",
+    "title": "MathematicalSystems.LinearMap",
+    "category": "type",
+    "text": "LinearMap\n\nA linear map\n\nx  Ax\n\nFields\n\nA – matrix\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.AffineMap",
+    "page": "Types",
+    "title": "MathematicalSystems.AffineMap",
+    "category": "type",
+    "text": "AffineMap\n\nAn affine map\n\nx  Ax + b\n\nFields\n\nA – matrix\nb – vector\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.LinearControlMap",
+    "page": "Types",
+    "title": "MathematicalSystems.LinearControlMap",
+    "category": "type",
+    "text": "LinearControlMap\n\nA linear control map\n\nx  Ax + Bu\n\nFields\n\nA – matrix\nB – matrix\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.ConstrainedLinearControlMap",
+    "page": "Types",
+    "title": "MathematicalSystems.ConstrainedLinearControlMap",
+    "category": "type",
+    "text": "ConstrainedLinearControlMap\n\nA linear control map with input constraints,\n\nx  Ax + Bu u  mathcalU\n\nFields\n\nA – matrix\nB – matrix\nU – input constraints\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.AffineControlMap",
+    "page": "Types",
+    "title": "MathematicalSystems.AffineControlMap",
+    "category": "type",
+    "text": "AffineControlMap\n\nAn affine control map\n\nx  Ax + Bu + c\n\nFields\n\nA – matrix\nB – matrix\nc – vector\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.ConstrainedAffineControlMap",
+    "page": "Types",
+    "title": "MathematicalSystems.ConstrainedAffineControlMap",
+    "category": "type",
+    "text": "ConstrainedAffineControlMap\n\nAn affine control map with input constraints,\n\nx  Ax + Bu + c u  mathcalU\n\nFields\n\nA – matrix\nB – matrix\nc – vector\nU – input constraints\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Maps-1",
+    "page": "Types",
+    "title": "Maps",
+    "category": "section",
+    "text": "AbstractMap\nLinearMap\nAffineMap\nLinearControlMap\nConstrainedLinearControlMap\nAffineControlMap\nConstrainedAffineControlMap"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.SystemWithOutput",
+    "page": "Types",
+    "title": "MathematicalSystems.SystemWithOutput",
+    "category": "type",
+    "text": "SystemWithOutput{ST<:AbstractSystem, MT<:AbstractMap}\n\nParametric composite type for systems with outputs. It is parameterized in the system\'s type (ST) and in the map\'s type (MT).\n\nFields\n\ns         – system of type ST\noutputmap – output map of type MT\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.LinearTimeInvariantSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.LinearTimeInvariantSystem",
+    "category": "function",
+    "text": "LinearTimeInvariantSystem(A, B, C, D)\n\nA linear time-invariant system with of the form\n\nx = Ax + Bu\ny = Cx + Du\n\nInput\n\nA – matrix\nB – matrix\nC – matrix\nD – matrix\n\nOutput\n\nA system with output such that the system is a linear control continuous system and the output map is a linear control map.\n\n\n\n\n\nLinearTimeInvariantSystem(A, B, C, D, X, U)\n\nA linear time-invariant system with state and input constraints of the form\n\nx = Ax + Bu\ny = Cx + Du\n\nwhere x(t)  X and u(t)  U for all t.\n\nInput\n\nA – matrix\nB – matrix\nC – matrix\nD – matrix\nX – state constraints\nU – input constraints\n\nOutput\n\nA system with output such that the system is a constrained linear control continuous system and the output map is a constrained linear control map.\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#MathematicalSystems.LTISystem",
+    "page": "Types",
+    "title": "MathematicalSystems.LTISystem",
+    "category": "function",
+    "text": "LTISystem\n\nLTISystem is an alias for LinearTimeInvariantSystem.\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Systems-with-output-1",
+    "page": "Types",
+    "title": "Systems with output",
+    "category": "section",
+    "text": "SystemWithOutput\nLinearTimeInvariantSystem\nLTISystem"
+},
+
+{
     "location": "lib/methods.html#",
     "page": "Methods",
     "title": "Methods",
@@ -406,6 +502,30 @@ var documenterSearchIndex = {"docs": [
     "title": "Inputs",
     "category": "section",
     "text": "inputdim\ninputset\nnextinput"
+},
+
+{
+    "location": "lib/methods.html#MathematicalSystems.outputdim",
+    "page": "Methods",
+    "title": "MathematicalSystems.outputdim",
+    "category": "function",
+    "text": "outputdim(m::AbstractMap)\n\nReturns the dimension of the output space of the map m.\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/methods.html#MathematicalSystems.outputmap",
+    "page": "Methods",
+    "title": "MathematicalSystems.outputmap",
+    "category": "function",
+    "text": "outputmap(s::SystemWithOutput)\n\nReturns the output map of a system with output.\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/methods.html#Output-1",
+    "page": "Methods",
+    "title": "Output",
+    "category": "section",
+    "text": "outputdim\noutputmap"
 },
 
 {
