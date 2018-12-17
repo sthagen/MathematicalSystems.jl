@@ -281,6 +281,22 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types.html#MathematicalSystems.IdentityMultiple",
+    "page": "Types",
+    "title": "MathematicalSystems.IdentityMultiple",
+    "category": "type",
+    "text": "IdentityMultiple{T} < AbstractMatrix{T} where T\n\nA scalar multiple of the identity matrix of given order and numeric type.\n\nFields\n\nM – uniform scaling operator of type T\nn – size of the identity matrix\n\nNotes\n\nThis is a wrapper type around Julia\'s lazy multiple of the identity operator, UniformScaling, such that IdentityMultiple can be used where abstract matrix is needed for dispatch. The difference between UniformScaling and a IdentityMultiple is that while the size of the former is generic, the size of the latter is fixed.\n\nExamples\n\njulia> import MathematicalSystems.IdentityMultiple\n\njulia> I2 = IdentityMultiple(1.0*I, 2)\nScalar multiple of the identity matrix of order 2:\n   UniformScaling{Float64}\n1.0*I\n\njulia> I2 + I2\nScalar multiple of the identity matrix of order 2:\n   UniformScaling{Float64}\n2.0*I\n\njulia> 10.0 * I2\nScalar multiple of the identity matrix of order 2:\n   UniformScaling{Float64}\n10.0*I\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types.html#Identity-operator-1",
+    "page": "Types",
+    "title": "Identity operator",
+    "category": "section",
+    "text": "IdentityMultiple"
+},
+
+{
     "location": "lib/types.html#MathematicalSystems.InitialValueProblem",
     "page": "Types",
     "title": "MathematicalSystems.InitialValueProblem",
