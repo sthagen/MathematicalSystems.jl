@@ -185,11 +185,35 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types/#MathematicalSystems.BlackBoxContinuousSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.BlackBoxContinuousSystem",
+    "category": "type",
+    "text": "BlackBoxContinuousSystem <: AbstractContinuousSystem\n\nContinuous-time system defined by a right-hand side of the form:\n\n    x = f(x(t))\n\nFields\n\nf        – function that holds the right-hand side\nstatedim – number of state variables\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types/#MathematicalSystems.ConstrainedBlackBoxContinuousSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.ConstrainedBlackBoxContinuousSystem",
+    "category": "type",
+    "text": "ConstrainedBlackBoxContinuousSystem <: AbstractContinuousSystem\n\nContinuous-time system defined by a right-hand side with state constraints of the form:\n\n    x = f(x(t)) x(t)  mathcalX\n\nFields\n\nf        – function that holds the right-hand side\nstatedim – number of state variables\nX        – state constraints\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types/#MathematicalSystems.ConstrainedBlackBoxControlContinuousSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.ConstrainedBlackBoxControlContinuousSystem",
+    "category": "type",
+    "text": "ConstrainedBlackBoxControlContinuousSystem <: AbstractContinuousSystem\n\nContinuous-time control system defined by a right-hand side with state constraints of the form:\n\n    x = f(x(t) u(t)) x(t)  mathcalX u(t)  mathcalU\n\nFields\n\nf        – function that holds the right-hand side\nstatedim – number of state variables\ninputdim – number of input variables\nX        – state constraints\nU        – input constraints\n\n\n\n\n\n"
+},
+
+{
     "location": "lib/types/#Continuous-Systems-1",
     "page": "Types",
     "title": "Continuous Systems",
     "category": "section",
-    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nAffineContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedAffineContinuousSystem\nConstrainedAffineControlContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem\nPolynomialContinuousSystem\nConstrainedPolynomialContinuousSystem"
+    "text": "ContinuousIdentitySystem\nConstrainedContinuousIdentitySystem\nLinearContinuousSystem\nAffineContinuousSystem\nLinearControlContinuousSystem\nConstrainedLinearContinuousSystem\nConstrainedAffineContinuousSystem\nConstrainedAffineControlContinuousSystem\nConstrainedLinearControlContinuousSystem\nLinearAlgebraicContinuousSystem\nConstrainedLinearAlgebraicContinuousSystem\nPolynomialContinuousSystem\nConstrainedPolynomialContinuousSystem\nBlackBoxContinuousSystem\nConstrainedBlackBoxContinuousSystem\nConstrainedBlackBoxControlContinuousSystem"
 },
 
 {
@@ -297,11 +321,35 @@ var documenterSearchIndex = {"docs": [
 },
 
 {
+    "location": "lib/types/#MathematicalSystems.BlackBoxDiscreteSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.BlackBoxDiscreteSystem",
+    "category": "type",
+    "text": "BlackBoxDiscreteSystem <: AbstractDiscreteSystem\n\nDiscrete-time system defined by a right-hand side of the form:\n\n    x_k+1 = f(x_k)\n\nFields\n\nf        – function that holds the right-hand side\nstatedim – number of state variables\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types/#MathematicalSystems.ConstrainedBlackBoxDiscreteSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.ConstrainedBlackBoxDiscreteSystem",
+    "category": "type",
+    "text": "ConstrainedBlackBoxDiscreteSystem <: AbstractDiscreteSystem\n\nDiscrete-time system defined by a right-hand side with state constraints of the form:\n\n    x_k+1 = f(x_k) x_k  mathcalX\n\nFields\n\nf        – function that holds the right-hand side\nstatedim – number of state variables\nX        – state constraints\n\n\n\n\n\n"
+},
+
+{
+    "location": "lib/types/#MathematicalSystems.ConstrainedBlackBoxControlDiscreteSystem",
+    "page": "Types",
+    "title": "MathematicalSystems.ConstrainedBlackBoxControlDiscreteSystem",
+    "category": "type",
+    "text": "ConstrainedBlackBoxControlDiscreteSystem <: AbstractDiscreteSystem\n\nDiscrete-time control system defined by a right-hand side with state constraints of the form:\n\n    x_k+1 = f(x_k) x_k  mathcalX u_k  mathcalU\n\nFields\n\nf        – function that holds the right-hand side\nstatedim – number of state variables\ninputdim – number of input variables\nX        – state constraints\nU        – input constraints\n\n\n\n\n\n"
+},
+
+{
     "location": "lib/types/#Discrete-Systems-1",
     "page": "Types",
     "title": "Discrete Systems",
     "category": "section",
-    "text": "DiscreteIdentitySystem\nConstrainedDiscreteIdentitySystem\nLinearDiscreteSystem\nAffineDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedAffineDiscreteSystem\nConstrainedLinearControlDiscreteSystem\nConstrainedAffineControlDiscreteSystem\nLinearAlgebraicDiscreteSystem\nConstrainedLinearAlgebraicDiscreteSystem\nPolynomialDiscreteSystem\nConstrainedPolynomialDiscreteSystem"
+    "text": "DiscreteIdentitySystem\nConstrainedDiscreteIdentitySystem\nLinearDiscreteSystem\nAffineDiscreteSystem\nLinearControlDiscreteSystem\nConstrainedLinearDiscreteSystem\nConstrainedAffineDiscreteSystem\nConstrainedLinearControlDiscreteSystem\nConstrainedAffineControlDiscreteSystem\nLinearAlgebraicDiscreteSystem\nConstrainedLinearAlgebraicDiscreteSystem\nPolynomialDiscreteSystem\nConstrainedPolynomialDiscreteSystem\nBlackBoxDiscreteSystem\nConstrainedBlackBoxDiscreteSystem\nConstrainedBlackBoxControlDiscreteSystem"
 },
 
 {
