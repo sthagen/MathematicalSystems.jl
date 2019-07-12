@@ -285,7 +285,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Types",
     "title": "MathematicalSystems.ConstrainedAffineControlDiscreteSystem",
     "category": "type",
-    "text": "ConstrainedAffineControlDiscreteSystem\n\nContinuous-time affine control system with state constraints of the form:\n\n    x_k+1 = A x+k + B u_k + c x_k  mathcalX u_k  mathcalU text for all  k\n\nand c a vector.\n\nFields\n\nA – square matrix\nB – matrix\nc – vector\nX – state constraints\nU – input constraints\n\n\n\n\n\n"
+    "text": "ConstrainedAffineControlDiscreteSystem\n\nContinuous-time affine control system with state constraints of the form:\n\n    x_k+1 = A x_k + B u_k + c x_k  mathcalX u_k  mathcalU text for all  k\n\nand c a vector.\n\nFields\n\nA – square matrix\nB – matrix\nc – vector\nX – state constraints\nU – input constraints\n\n\n\n\n\n"
 },
 
 {
