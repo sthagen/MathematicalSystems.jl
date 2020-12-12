@@ -30,6 +30,7 @@ ConstrainedContinuousIdentitySystem
 LinearContinuousSystem
 AffineContinuousSystem
 LinearControlContinuousSystem
+AffineControlContinuousSystem
 ConstrainedLinearContinuousSystem
 ConstrainedAffineContinuousSystem
 ConstrainedAffineControlContinuousSystem
@@ -64,6 +65,7 @@ ConstrainedDiscreteIdentitySystem
 LinearDiscreteSystem
 AffineDiscreteSystem
 LinearControlDiscreteSystem
+AffineControlDiscreteSystem
 ConstrainedLinearDiscreteSystem
 ConstrainedAffineDiscreteSystem
 ConstrainedLinearControlDiscreteSystem
@@ -163,4 +165,10 @@ ConstrainedResetMap
 SystemWithOutput
 LinearTimeInvariantSystem
 LTISystem
+```
+
+
+## Vector Field
+```@docs
+VectorField
 ```

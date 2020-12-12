@@ -29,6 +29,13 @@ inputset
 nextinput
 ```
 
+## Noises
+
+```@docs
+noisedim
+noiseset
+```
+
 ## Output
 
 ```@docs
@@ -44,6 +51,7 @@ islinear(::AbstractMap)
 isaffine(::AbstractSystem)
 ispolynomial(::AbstractSystem)
 isaffine(::AbstractMap)
+isblackbox(::AbstractSystem)
 isnoisy(::AbstractSystem)
 iscontrolled(::AbstractSystem)
 isconstrained(::AbstractSystem)
@@ -63,6 +71,11 @@ apply
 
 ```@docs
 successor
+```
+
+## Vector Field
+```@docs
+vector_field
 ```
 
 ## Discretization

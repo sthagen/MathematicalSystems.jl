@@ -3,6 +3,7 @@ module MathematicalSystems
 
 using LinearAlgebra, SparseArrays
 using LinearAlgebra: checksquare
+using RecipesBase
 
 #=======================
 Identity operator
@@ -45,6 +46,7 @@ export statedim,
 export islinear,
        isaffine,
        ispolynomial,
+       isblackbox,
        isnoisy,
        iscontrolled,
        isconstrained
@@ -59,6 +61,7 @@ export ContinuousIdentitySystem,
        LinearContinuousSystem,
        AffineContinuousSystem,
        LinearControlContinuousSystem,
+       AffineControlContinuousSystem,
        ConstrainedLinearContinuousSystem,
        ConstrainedAffineContinuousSystem,
        ConstrainedAffineControlContinuousSystem,
@@ -92,6 +95,7 @@ export DiscreteIdentitySystem,
        LinearDiscreteSystem,
        AffineDiscreteSystem,
        LinearControlDiscreteSystem,
+       AffineControlDiscreteSystem,
        ConstrainedLinearDiscreteSystem,
        ConstrainedAffineDiscreteSystem,
        ConstrainedLinearControlDiscreteSystem,
@@ -181,10 +185,14 @@ export @map,
 
 #===================================
 Successor state for discrete systems
+and vector field for continuous systems
 ====================================#
+include("instantiate.jl")
 include("successor.jl")
+include("vector_field.jl")
 
-export successor
+export successor,
+       vector_field
 
 #===================================
 Discretization for affine systems
